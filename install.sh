@@ -37,7 +37,7 @@ esac
 need_cmd vim
 
 rm -rf $HOME/.config/nvim $HOME/.vim $HOME/.vimrc
-git clone https://hithub.com/PRDeving/.nvim.git $HOME/.config/nvim
+git clone https://github.com/PRDeving/.nvim.git $HOME/.config/nvim
 
 vim --headless "+Lazy! sync" +qa
 echo "READY!!!"
