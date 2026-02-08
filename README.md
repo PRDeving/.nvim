@@ -2,6 +2,8 @@
 
 Personal Neovim setup managed via `init.lua` and the `lua/` modules.
 
+![Screenshot](./screenshot.png)
+
 ## Install
 
 ```sh
