@@ -22,7 +22,8 @@ case "$OS" in
 	BIN=nvim-linux-$ARCH.appimage
     curl -LO https://github.com/neovim/neovim/releases/latest/download/$BIN
     chmod +x $BIN
-    sudo mv $BIN /usr/bin/vim
+    sudo mv $BIN /usr/bin/nvim
+    sudo ln -s /usr/bin/nvim /usr/bin/vim
     ;;
   Darwin)
     need_cmd brew
@@ -34,11 +35,11 @@ case "$OS" in
     exit 1
     ;;
 esac
-need_cmd vim
+need_cmd nvim
 
 rm -rf $HOME/.config/nvim $HOME/.vim $HOME/.vimrc
 git clone https://github.com/PRDeving/.nvim.git $HOME/.config/nvim
 
-vim --headless "+Lazy! sync" +qa
+nvim --headless "+Lazy! sync" +qa
 echo "READY!!!"
 
