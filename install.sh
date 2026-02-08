@@ -27,7 +27,7 @@ case "$OS" in
   Darwin)
     need_cmd brew
     brew update
-    brew install neovim universal-ctags
+    brew install neovim
     ;;
   *)
     echo "Unsupported system: $OS"
