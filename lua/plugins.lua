@@ -88,7 +88,16 @@ require("lazy").setup({
   {
       "github/copilot.vim",
       lazy = false
-  }
+  },
+
+  {
+    dir = vim.fn.stdpath("config") .. "/local/codexterm.nvim",
+    name = "codexterm.nvim",
+    dependencies = { "akinsho/toggleterm.nvim" },
+    config = function()
+      require("codexterm").setup()
+    end,
+  },
 
 })
 
