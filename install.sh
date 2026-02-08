@@ -23,6 +23,7 @@ case "$OS" in
     curl -LO https://github.com/neovim/neovim/releases/latest/download/$BIN
     chmod +x $BIN
     sudo mv $BIN /usr/bin/nvim
+    sudo rm -f /usr/bin/vim
     sudo ln -s /usr/bin/nvim /usr/bin/vim
     ;;
   Darwin)
