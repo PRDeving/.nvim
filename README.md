@@ -54,6 +54,8 @@ Defined in `lua/keymaps.lua`. Leader is `,`.
   - `,s` horizontal split + focus below
   - `,v` vertical split + focus right
   - `,c` close window
+- LazyGit:
+    - `,lg` opens/toggles LazyGit panel
 - Codex:
   - `,cc` opens/toggles Codex agent panel
   - `,cq` closes Codex agent panel
@@ -70,7 +72,7 @@ Managed with `lazy.nvim` in `lua/plugins.lua`.
 - Files: `preservim/nerdtree`
 - Bookmarks: `vim-bookmarks`
 - Fuzzy finder: `telescope.nvim` + `plenary.nvim`
-- Git: `vim-fugitive`
+- Git: `vim-fugitive` + `lazygit.nvim`
 - LSP: `nvim-lspconfig`, `mason.nvim`, `mason-lspconfig.nvim`
 - Completion: `nvim-cmp` + `cmp-nvim-lsp` + `cmp-buffer` + `cmp-path`
 - Treesitter: `nvim-treesitter` (updates via `:TSUpdate`)
