@@ -54,6 +54,9 @@ Defined in `lua/keymaps.lua`. Leader is `,`.
   - `,s` horizontal split + focus below
   - `,v` vertical split + focus right
   - `,c` close window
+- Codex:
+  - `,cc` opens/toggles Codex agent panel
+  - `,cq` closes Codex agent panel
 - Misc:
   - `Q` disabled
   - `,p` paste from system clipboard
